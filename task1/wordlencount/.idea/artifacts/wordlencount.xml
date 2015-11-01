@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="wordlencount">
+    <output-path>$PROJECT_DIR$/bin</output-path>
+    <root id="archive" name="wordlencount.jar">
+      <element id="module-output" name="wordlencount" />
+    </root>
+  </artifact>
+</component>
