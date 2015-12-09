@@ -1,0 +1,8 @@
+CANDLE_WIDTH = 300000
+CANDLE_SECURITIES = ".*"
+CANDLE_DATE_FROM = 19000101
+CANDLE_DATE_TO = 20200101
+CANDLE_TIME_FROM = 1000
+CANDLE_TIME_TO = 1800
+INPUT = wasb://financedata@bigdatamsu.blob.core.windows.net/*
+OUTPUT = wasb:///candles/output

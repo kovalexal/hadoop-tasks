@@ -1,0 +1,22 @@
+group 'kovalch.uk'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'idea'
+
+sourceCompatibility = 1.5
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+    compile("org.apache.pig:pig:0.15.0")
+    compile("org.apache.hadoop:hadoop-client:2.7.1")
+    compile("com.linkedin.datafu:datafu:1.2.0")
+//    compile("org.apache.commons:commons-lang3:3.4")
+}
+
+jar {
+}

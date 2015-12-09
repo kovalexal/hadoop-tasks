@@ -1,0 +1,148 @@
+15/12/09 08:39:30 INFO pig.ExecTypeProvider: Trying ExecType : LOCAL
+15/12/09 08:39:30 INFO pig.ExecTypeProvider: Trying ExecType : MAPREDUCE
+15/12/09 08:39:30 INFO pig.ExecTypeProvider: Picked MAPREDUCE as the ExecType
+2015-12-09 08:39:30,185 [main] INFO  org.apache.pig.Main - Apache Pig version 0.14.0.2.2.7.1-33 (rexported) compiled Oct 13 2015, 04:38:19
+2015-12-09 08:39:30,185 [main] INFO  org.apache.pig.Main - Logging error messages to: /home/kovalexal/pig_task5/pig_1449650370176.log
+2015-12-09 08:39:32,174 [main] INFO  org.apache.pig.impl.util.Utils - Default bootup file /home/kovalexal/.pigbootup not found
+2015-12-09 08:39:32,507 [main] INFO  org.apache.pig.backend.hadoop.executionengine.HExecutionEngine - Connecting to hadoop file system at: wasb://kovalchukhadoop1-4@kovalchukalexander.blob.core.windows.net
+2015-12-09 08:39:36,002 [main] INFO  org.apache.pig.tools.pigstats.ScriptState - Pig features used in the script: GROUP_BY,FILTER
+2015-12-09 08:39:36,094 [main] INFO  org.apache.pig.data.SchemaTupleBackend - Key [pig.schematuple] was not set... will not generate code.
+2015-12-09 08:39:36,188 [main] INFO  org.apache.pig.newplan.logical.optimizer.LogicalPlanOptimizer - {RULES_ENABLED=[AddForEach, ColumnMapKeyPrune, ConstantCalculator, GroupByConstParallelSetter, LimitOptimizer, LoadTypeCastInserter, MergeFilter, MergeForEach, PartitionFilterOptimizer, PredicatePushdownOptimizer, PushDownForEachFlatten, PushUpFilter, SplitFilter, StreamTypeCastInserter]}
+2015-12-09 08:39:36,298 [main] INFO  org.apache.pig.newplan.logical.rules.ColumnPruneVisitor - Columns pruned for 1-1: $1, $5, $6, $7
+2015-12-09 08:39:36,595 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MRCompiler - File concatenation threshold: 100 optimistic? false
+2015-12-09 08:39:36,679 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.SecondaryKeyOptimizerMR - Using Secondary Key Optimization for MapReduce node scope-73
+2015-12-09 08:39:36,706 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MultiQueryOptimizer - MR plan size before optimization: 1
+2015-12-09 08:39:36,707 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MultiQueryOptimizer - MR plan size after optimization: 1
+2015-12-09 08:39:37,734 [main] INFO  org.apache.hadoop.yarn.client.api.impl.TimelineClientImpl - Timeline service address: http://hn0-kovalc.iu2vgsh05v1updji0l1fvgnkif.hx.internal.cloudapp.net:8188/ws/v1/timeline/
+2015-12-09 08:39:38,394 [main] INFO  org.apache.hadoop.yarn.client.AHSProxy - Connecting to Application History server at hn0-kovalc.iu2vgsh05v1updji0l1fvgnkif.hx.internal.cloudapp.net/10.0.0.10:10200
+2015-12-09 08:39:38,572 [main] INFO  org.apache.pig.tools.pigstats.mapreduce.MRScriptState - Pig script settings are added to the job
+2015-12-09 08:39:38,592 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+2015-12-09 08:39:38,600 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Reduce phase detected, estimating # of required reducers.
+2015-12-09 08:39:38,600 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Setting Parallelism to 16
+2015-12-09 08:39:38,600 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - This job cannot be converted run in-process
+2015-12-09 08:39:39,256 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Added jar file:/home/kovalexal/pig_task5/pig_candles_utilities-1.0-SNAPSHOT.jar to DistributedCache through /tmp/temp834535790/tmp-1463719221/pig_candles_utilities-1.0-SNAPSHOT.jar
+2015-12-09 08:39:39,712 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Added jar file:/home/kovalexal/pig_task5/datafu-1.2.0.jar to DistributedCache through /tmp/temp834535790/tmp905155168/datafu-1.2.0.jar
+2015-12-09 08:39:39,962 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Added jar file:/home/kovalexal/pig_task5/piggybank-0.15.0.jar to DistributedCache through /tmp/temp834535790/tmp-319734790/piggybank-0.15.0.jar
+2015-12-09 08:39:40,452 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Added jar file:/usr/hdp/2.2.7.1-33/pig/pig-0.14.0.2.2.7.1-33-core-h2.jar to DistributedCache through /tmp/temp834535790/tmp521141914/pig-0.14.0.2.2.7.1-33-core-h2.jar
+2015-12-09 08:39:40,699 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Added jar file:/usr/hdp/2.2.7.1-33/pig/lib/automaton-1.11-8.jar to DistributedCache through /tmp/temp834535790/tmp1774358451/automaton-1.11-8.jar
+2015-12-09 08:39:40,918 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Added jar file:/usr/hdp/2.2.7.1-33/pig/lib/antlr-runtime-3.4.jar to DistributedCache through /tmp/temp834535790/tmp-1970520965/antlr-runtime-3.4.jar
+2015-12-09 08:39:41,342 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Added jar file:/usr/hdp/2.2.7.1-33/hadoop/lib/guava-11.0.2.jar to DistributedCache through /tmp/temp834535790/tmp1253628027/guava-11.0.2.jar
+2015-12-09 08:39:41,620 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Added jar file:/usr/hdp/2.2.7.1-33/hadoop-mapreduce/joda-time-2.8.2.jar to DistributedCache through /tmp/temp834535790/tmp1137623659/joda-time-2.8.2.jar
+2015-12-09 08:39:41,723 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Setting up single store job
+2015-12-09 08:39:41,745 [main] INFO  org.apache.pig.data.SchemaTupleFrontend - Key [pig.schematuple] is false, will not generate code.
+2015-12-09 08:39:41,745 [main] INFO  org.apache.pig.data.SchemaTupleFrontend - Starting process to move generated code to distributed cacche
+2015-12-09 08:39:41,746 [main] INFO  org.apache.pig.data.SchemaTupleFrontend - Setting key [pig.schematuple.classes] with classes to deserialize []
+2015-12-09 08:39:41,987 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 1 map-reduce job(s) waiting for submission.
+2015-12-09 08:39:42,332 [JobControl] INFO  org.apache.hadoop.yarn.client.api.impl.TimelineClientImpl - Timeline service address: http://hn0-kovalc.iu2vgsh05v1updji0l1fvgnkif.hx.internal.cloudapp.net:8188/ws/v1/timeline/
+2015-12-09 08:39:42,336 [JobControl] INFO  org.apache.hadoop.yarn.client.AHSProxy - Connecting to Application History server at hn0-kovalc.iu2vgsh05v1updji0l1fvgnkif.hx.internal.cloudapp.net/10.0.0.10:10200
+2015-12-09 08:39:42,679 [JobControl] INFO  org.apache.hadoop.yarn.client.ConfiguredRMFailoverProxyProvider - Failing over to rm2
+2015-12-09 08:39:42,886 [JobControl] WARN  org.apache.hadoop.mapreduce.JobSubmitter - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2015-12-09 08:39:43,513 [JobControl] INFO  org.apache.hadoop.mapreduce.lib.input.FileInputFormat - Total input paths to process : 2
+2015-12-09 08:39:43,513 [JobControl] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths to process : 2
+2015-12-09 08:39:43,537 [JobControl] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths (combined) to process : 3
+2015-12-09 08:39:43,811 [JobControl] INFO  org.apache.hadoop.mapreduce.JobSubmitter - number of splits:3
+2015-12-09 08:39:44,346 [JobControl] INFO  org.apache.hadoop.mapreduce.JobSubmitter - Submitting tokens for job: job_1449638208021_0014
+2015-12-09 08:39:44,719 [JobControl] INFO  org.apache.hadoop.mapred.YARNRunner - Job jar is not present. Not adding any jar to the list of resources.
+2015-12-09 08:39:45,708 [JobControl] INFO  org.apache.hadoop.yarn.client.api.impl.YarnClientImpl - Submitted application application_1449638208021_0014
+2015-12-09 08:39:45,784 [JobControl] INFO  org.apache.hadoop.mapreduce.Job - The url to track the job: http://hn1-kovalc.iu2vgsh05v1updji0l1fvgnkif.hx.internal.cloudapp.net:8088/proxy/application_1449638208021_0014/
+2015-12-09 08:39:45,785 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - HadoopJobId: job_1449638208021_0014
+2015-12-09 08:39:45,785 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Processing aliases 1-1,1-3,1-4,A,D,sorted_by_price
+2015-12-09 08:39:45,785 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - detailed locations: M: 1-1[24,4],1-1[-1,-1],1-3[18,2],A[-1,-1],1-4[33,13] C:  R: D[33,4],sorted_by_price[35,19]
+2015-12-09 08:39:45,807 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 0% complete
+2015-12-09 08:39:45,807 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Running jobs are [job_1449638208021_0014]
+2015-12-09 08:40:22,906 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 5% complete
+2015-12-09 08:40:22,906 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Running jobs are [job_1449638208021_0014]
+2015-12-09 08:40:34,944 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 10% complete
+2015-12-09 08:40:34,944 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Running jobs are [job_1449638208021_0014]
+2015-12-09 08:40:44,973 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 14% complete
+2015-12-09 08:40:44,973 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Running jobs are [job_1449638208021_0014]
+2015-12-09 08:40:58,010 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 18% complete
+2015-12-09 08:40:58,010 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Running jobs are [job_1449638208021_0014]
+2015-12-09 08:41:25,097 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 22% complete
+2015-12-09 08:41:25,098 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Running jobs are [job_1449638208021_0014]
+2015-12-09 08:41:40,142 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 30% complete
+2015-12-09 08:41:40,142 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Running jobs are [job_1449638208021_0014]
+2015-12-09 08:42:00,204 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 34% complete
+2015-12-09 08:42:00,205 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Running jobs are [job_1449638208021_0014]
+2015-12-09 08:42:43,326 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 38% complete
+2015-12-09 08:42:43,326 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Running jobs are [job_1449638208021_0014]
+2015-12-09 08:43:18,421 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 42% complete
+2015-12-09 08:43:18,422 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Running jobs are [job_1449638208021_0014]
+2015-12-09 08:44:30,625 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 48% complete
+2015-12-09 08:44:30,625 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Running jobs are [job_1449638208021_0014]
+2015-12-09 08:44:38,149 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 52% complete
+2015-12-09 08:44:38,149 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Running jobs are [job_1449638208021_0014]
+2015-12-09 08:44:46,172 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 56% complete
+2015-12-09 08:44:46,172 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Running jobs are [job_1449638208021_0014]
+2015-12-09 08:44:58,207 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 64% complete
+2015-12-09 08:44:58,208 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Running jobs are [job_1449638208021_0014]
+2015-12-09 08:45:00,214 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 72% complete
+2015-12-09 08:45:00,214 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Running jobs are [job_1449638208021_0014]
+2015-12-09 08:45:10,244 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 76% complete
+2015-12-09 08:45:10,245 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Running jobs are [job_1449638208021_0014]
+2015-12-09 08:45:15,259 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 81% complete
+2015-12-09 08:45:15,259 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Running jobs are [job_1449638208021_0014]
+2015-12-09 08:45:20,274 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 85% complete
+2015-12-09 08:45:20,274 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Running jobs are [job_1449638208021_0014]
+2015-12-09 08:45:55,369 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 89% complete
+2015-12-09 08:45:55,369 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Running jobs are [job_1449638208021_0014]
+2015-12-09 08:45:56,370 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 95% complete
+2015-12-09 08:45:56,370 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Running jobs are [job_1449638208021_0014]
+2015-12-09 08:46:18,434 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 99% complete
+2015-12-09 08:46:18,434 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Running jobs are [job_1449638208021_0014]
+2015-12-09 08:47:52,036 [main] INFO  org.apache.hadoop.yarn.client.api.impl.TimelineClientImpl - Timeline service address: http://hn0-kovalc.iu2vgsh05v1updji0l1fvgnkif.hx.internal.cloudapp.net:8188/ws/v1/timeline/
+2015-12-09 08:47:52,038 [main] INFO  org.apache.hadoop.yarn.client.AHSProxy - Connecting to Application History server at hn0-kovalc.iu2vgsh05v1updji0l1fvgnkif.hx.internal.cloudapp.net/10.0.0.10:10200
+2015-12-09 08:47:52,069 [main] INFO  org.apache.hadoop.yarn.client.ConfiguredRMFailoverProxyProvider - Failing over to rm2
+2015-12-09 08:47:52,081 [main] INFO  org.apache.hadoop.mapred.ClientServiceDelegate - Application state is completed. FinalApplicationStatus=SUCCEEDED. Redirecting to job history server
+2015-12-09 08:47:54,025 [main] INFO  org.apache.hadoop.yarn.client.api.impl.TimelineClientImpl - Timeline service address: http://hn0-kovalc.iu2vgsh05v1updji0l1fvgnkif.hx.internal.cloudapp.net:8188/ws/v1/timeline/
+2015-12-09 08:47:54,028 [main] INFO  org.apache.hadoop.yarn.client.AHSProxy - Connecting to Application History server at hn0-kovalc.iu2vgsh05v1updji0l1fvgnkif.hx.internal.cloudapp.net/10.0.0.10:10200
+2015-12-09 08:47:54,058 [main] INFO  org.apache.hadoop.yarn.client.ConfiguredRMFailoverProxyProvider - Failing over to rm2
+2015-12-09 08:47:54,064 [main] INFO  org.apache.hadoop.mapred.ClientServiceDelegate - Application state is completed. FinalApplicationStatus=SUCCEEDED. Redirecting to job history server
+2015-12-09 08:47:54,720 [main] INFO  org.apache.hadoop.yarn.client.api.impl.TimelineClientImpl - Timeline service address: http://hn0-kovalc.iu2vgsh05v1updji0l1fvgnkif.hx.internal.cloudapp.net:8188/ws/v1/timeline/
+2015-12-09 08:47:54,725 [main] INFO  org.apache.hadoop.yarn.client.AHSProxy - Connecting to Application History server at hn0-kovalc.iu2vgsh05v1updji0l1fvgnkif.hx.internal.cloudapp.net/10.0.0.10:10200
+2015-12-09 08:47:54,766 [main] INFO  org.apache.hadoop.yarn.client.ConfiguredRMFailoverProxyProvider - Failing over to rm2
+2015-12-09 08:47:54,772 [main] INFO  org.apache.hadoop.mapred.ClientServiceDelegate - Application state is completed. FinalApplicationStatus=SUCCEEDED. Redirecting to job history server
+2015-12-09 08:47:54,907 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 100% complete
+2015-12-09 08:47:54,911 [main] INFO  org.apache.pig.tools.pigstats.mapreduce.SimplePigStats - Script Statistics: 
+
+HadoopVersion	PigVersion	UserId	StartedAt	FinishedAt	Features
+2.6.0.2.2.7.1-33	0.14.0.2.2.7.1-33	kovalexal	2015-12-09 08:39:38	2015-12-09 08:47:54	GROUP_BY,FILTER
+
+Success!
+
+Job Stats (time in seconds):
+JobId	Maps	Reduces	MaxMapTime	MinMapTime	AvgMapTime	MedianMapTime	MaxReduceTime	MinReduceTime	AvgReduceTime	MedianReducetime	Alias	Feature	Outputs
+job_1449638208021_0014	3	16	293	99	222	274	242	52	193	239	1-1,1-3,1-4,A,D,sorted_by_price	GROUP_BY	wasb:///candles/output,
+
+Input(s):
+Successfully read 19495893 records from: "wasb://financedata@bigdatamsu.blob.core.windows.net/*"
+
+Output(s):
+Successfully stored 65976 records in: "wasb:///candles/output"
+
+Counters:
+Total records written : 65976
+Total bytes written : 0
+Spillable Memory Manager spill count : 0
+Total bags proactively spilled: 0
+Total records proactively spilled: 0
+
+Job DAG:
+job_1449638208021_0014
+
+
+2015-12-09 08:47:55,196 [main] INFO  org.apache.hadoop.yarn.client.api.impl.TimelineClientImpl - Timeline service address: http://hn0-kovalc.iu2vgsh05v1updji0l1fvgnkif.hx.internal.cloudapp.net:8188/ws/v1/timeline/
+2015-12-09 08:47:55,199 [main] INFO  org.apache.hadoop.yarn.client.AHSProxy - Connecting to Application History server at hn0-kovalc.iu2vgsh05v1updji0l1fvgnkif.hx.internal.cloudapp.net/10.0.0.10:10200
+2015-12-09 08:47:55,249 [main] INFO  org.apache.hadoop.yarn.client.ConfiguredRMFailoverProxyProvider - Failing over to rm2
+2015-12-09 08:47:55,254 [main] INFO  org.apache.hadoop.mapred.ClientServiceDelegate - Application state is completed. FinalApplicationStatus=SUCCEEDED. Redirecting to job history server
+2015-12-09 08:47:55,541 [main] INFO  org.apache.hadoop.yarn.client.api.impl.TimelineClientImpl - Timeline service address: http://hn0-kovalc.iu2vgsh05v1updji0l1fvgnkif.hx.internal.cloudapp.net:8188/ws/v1/timeline/
+2015-12-09 08:47:55,542 [main] INFO  org.apache.hadoop.yarn.client.AHSProxy - Connecting to Application History server at hn0-kovalc.iu2vgsh05v1updji0l1fvgnkif.hx.internal.cloudapp.net/10.0.0.10:10200
+2015-12-09 08:47:55,572 [main] INFO  org.apache.hadoop.yarn.client.ConfiguredRMFailoverProxyProvider - Failing over to rm2
+2015-12-09 08:47:55,578 [main] INFO  org.apache.hadoop.mapred.ClientServiceDelegate - Application state is completed. FinalApplicationStatus=SUCCEEDED. Redirecting to job history server
+2015-12-09 08:47:56,037 [main] INFO  org.apache.hadoop.yarn.client.api.impl.TimelineClientImpl - Timeline service address: http://hn0-kovalc.iu2vgsh05v1updji0l1fvgnkif.hx.internal.cloudapp.net:8188/ws/v1/timeline/
+2015-12-09 08:47:56,039 [main] INFO  org.apache.hadoop.yarn.client.AHSProxy - Connecting to Application History server at hn0-kovalc.iu2vgsh05v1updji0l1fvgnkif.hx.internal.cloudapp.net/10.0.0.10:10200
+2015-12-09 08:47:56,071 [main] INFO  org.apache.hadoop.yarn.client.ConfiguredRMFailoverProxyProvider - Failing over to rm2
+2015-12-09 08:47:56,076 [main] INFO  org.apache.hadoop.mapred.ClientServiceDelegate - Application state is completed. FinalApplicationStatus=SUCCEEDED. Redirecting to job history server
+2015-12-09 08:47:56,187 [main] WARN  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Encountered Warning FIELD_DISCARDED_TYPE_CONVERSION_FAILED 4 time(s).
+2015-12-09 08:47:56,188 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Success!
+2015-12-09 08:47:56,234 [main] INFO  org.apache.pig.Main - Pig script completed in 8 minutes, 26 seconds and 382 milliseconds (506382 ms)
